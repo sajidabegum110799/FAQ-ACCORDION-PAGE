@@ -1,0 +1,145 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans" sans-serif;
+}
+
+.container {
+    width: 85vw;
+    height: 85vh;
+    background-color: hsl(275, 100%, 97%);
+    box-shadow: 5px 5px 15px hsl(0, 1%, 23%);
+    margin-left: 6rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/images/background-pattern-desktop.svg");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#faq-accordion-sec {
+    width: 40vw;
+    height: 55vh;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px hsl(0, 0%, 45%);
+    padding: 1rem;
+}
+
+.faq {
+    display: flex;
+    gap: 24px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    color: hsl(292, 42%, 14%);
+
+}
+
+h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: hsl(292, 42%, 14%);
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+    margin-top: -0.4rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: hsl(0, 7%, 89%);
+    margin: -0.1rem;
+}
+
+h4:hover {
+    color: hsl(293, 63%, 69%);
+    cursor: pointer;
+}
+
+h4:active {
+    color: hsl(293, 63%, 69%);
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    #faq-accordion-sec {
+        width: 55vw;
+        height: 50vh;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 100vw;
+        margin: 0;
+    }
+
+    #faq-accordion-sec {
+        width: 70vw;
+        height: 55vh;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    @media (max-width: 350px) {
+        .container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #faq-accordion-sec {
+            width: 75vw;
+            height: 60vh;
+        }
+
+        h4 {
+            font-size: 0.8rem;
+        }
+
+        p {
+            font-size: 11px;
+        }
+    }
+
+    @media (max-width: 260px) {
+        #faq-accordion-sec {
+            width: 80vw;
+            height: 70vh;
+        }
+
+    }
+
+
+
+}
